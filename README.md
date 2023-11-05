@@ -7,26 +7,24 @@ An app for discovering poetry using embedding-based semantic retrieval
 
 [What is semantic search and why do we want it](https://anandphilip.com/what-is-semantic-search-and-why-do-we-want-it/)
  
+## Demo
 
 
-## Overview
-
-The app happened because I wanted to understand semantic search.I figured out the basics using the wikiscience dataset, but figured i'd make something that would be fun to use myself and maybe share with friends. So I decided to make something that helps me find better poetry.
+[MoodMuse: Demo app](https://starry-eyed-geometry.anvil.app/)
 
 ## Features
 
 - Open-ended discovery of poetry based on emotions, themes, objects or settings.
 - Efficient Approximate Nearest Neighbors (ANN) search using NGT
 
+## Overview
+
+The app happened because I wanted to understand semantic search.I figured out the basics using the wikiscience dataset, but figured i'd make something that would be fun to use myself and maybe share with friends. So I decided to make something that helps me find better poetry.
+
 ## Data
 
 
 ~16000 poems in english scraped from poetryfoundation.org
-
-## Demo
-
-
-[MoodMuse: Demo app](https://starry-eyed-geometry.anvil.app/)
 
 ## Modelling notes
 
