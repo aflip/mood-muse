@@ -55,7 +55,7 @@ Following the [guide at pinecone](https://www.pinecone.io/learn/series/faiss/) a
 1. Embed corpus on `jina-embeddings-v2-base-en`
 2. Index embedding using NGT
 3. Embed query using the same model
-4. Look up query in NGT index
+4. Search NGT index using query embedding, retrieving based on cosine similarity
 5. Look up top results in a pandas dataframe that has the text of the poems (don't judge me, it's just 50MB and a db is too much work)
 6. Serve the top 5 hits using an [Anvil app](https://anvil.works/)
 
