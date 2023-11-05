@@ -12,3 +12,13 @@ An app for discovering poetry using embedding-based semantic retrieval
 ## Overview
 
 The app happened because I wanted to understand semantic search.I figured out the basics using the wikiscience dataset, but figured i'd make something that would be fun to use myself and maybe share with friends. So I decided to make something that helps me find better poetry.
+
+## Data
+
+
+~16000 poems in english scraped from poetryfoundation.org
+
+## Demo
+
+
+[MoodMuse: Demo app](https://starry-eyed-geometry.anvil.app/)
