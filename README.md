@@ -19,12 +19,11 @@ An app for discovering poetry using embedding-based semantic retrieval
 
 ## Overview
 
-The app happened because I wanted to understand semantic search.I figured out the basics using the wikiscience dataset, but figured i'd make something that would be fun to use myself and maybe share with friends. So I decided to make something that helps me find better poetry.
+The app happened because I wanted to understand semantic search. I figured out the basics using the [`millawell/wikipedia_field_of_science`](https://huggingface.co/datasets/millawell/wikipedia_field_of_science) dataset, but wanted to make something that would be fun to use myself and maybe share with friends. So I decided to make something that helps me find better poetry.
 
 ## Data
 
-
-~16000 poems in english scraped from poetryfoundation.org
+~16000 english poems scraped from poetryfoundation.org
 
 ## Modelling notes
 
