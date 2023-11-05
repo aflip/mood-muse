@@ -13,6 +13,11 @@ An app for discovering poetry using embedding-based semantic retrieval
 
 The app happened because I wanted to understand semantic search.I figured out the basics using the wikiscience dataset, but figured i'd make something that would be fun to use myself and maybe share with friends. So I decided to make something that helps me find better poetry.
 
+## Features
+
+- Open-ended discovery of poetry based on emotions, themes, objects or settings.
+- Efficient Approximate Nearest Neighbors (ANN) search using NGT
+
 ## Data
 
 
@@ -43,5 +48,30 @@ Sentence-Transformers recommends using a reranking model, and I tried them out, 
 ## Indexing and retrieval
 
 Following the [guide at pinecone](https://www.pinecone.io/learn/series/faiss/) and [ANN benchmarks](https://ann-benchmarks.com/), I tried out [Neighborhood Graph and Tree (NGT)](https://github.com/yahoojapan/NGT), [FAISS](https://github.com/facebookresearch/faiss) and [HNSW](https://github.com/nmslib/hnswlib) extensively on multiple datasets. I found that on smaller datasets, NGT and FAISS work the best, and on larger datasets the difference between the three is negligible. This could be because I didn't try out large enough datasets. The differences are small and some hyperparameter tuning could improve things. I implemented NGT in the app because I like Japan and I don't like Facebook. 
+
+## Tech stack/Process
+
+
+1. Embed corpus on `jina-embeddings-v2-base-en`
+2. Index embedding using NGT
+3. Embed query using the same model
+4. Look up query in NGT index
+5. Look up top results in a pandas dataframe that has the text of the poems (don't judge me, it's just 50MB and a db is too much work)
+6. Serve the top 5 hits using an [Anvil app](https://anvil.works/)
+
+
+## Resources
+
+The app takes great inspiration from the excellent Vicki Boykis, who, around the same time as when I began puttering around with semantic search, was doing the same and shared her findings in great detail. Her app for [finding books by vibes - Viberary](https://viberary.pizza/) is excellent and her[ research on this subject](https://github.com/veekaybee/viberary) was a major source of information. 
+
+Pinecone has a great online [book on NLP for semantic search](https://www.pinecone.io/learn/series/nlp/) 
+
+[Sentence-transformers docuemntation](https://www.sbert.net/) and [github repo](https://github.com/UKPLab/sentence-transformers/tree/master/examples) are filled with great instructions and examples on how to train, embed, retreieve etc. This site was open all the time for the last few months. 
+
+## Interesting papers
+
+Mengzhao Wang, Xiaoliang Xu, Qiang Yue, and Yuxiang Wang. 2021. [A comprehensive survey and experimental comparison of graph-based approximate nearest neighbor search](https://arxiv.org/abs/2101.12631). Proc. VLDB Endow. 14, 11 (July 2021), 1964–1978. https://doi.org/10.14778/3476249.3476255 
+
+[Pretrained Transformers for Text Ranking: BERT and Beyond](https://aclanthology.org/2021.naacl-tutorials.1) (Yates et al., NAACL 2021)
 
 
