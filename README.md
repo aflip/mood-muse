@@ -24,6 +24,7 @@ The app happened because I wanted to understand semantic search. I figured out t
 ## Data
 
 ~16000 english poems scraped from poetryfoundation.org
+Embeddings and data can be [accessed on googledrive](https://drive.google.com/drive/folders/1cJr5qk9DN8tMjlYGnH03f3u3eLRnkTzQ?usp=sharing)
 
 ## Modelling notes
 
