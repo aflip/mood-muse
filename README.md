@@ -67,6 +67,8 @@ Pinecone has a great online [book on NLP for semantic search](https://www.pineco
 
 [Sentence-transformers docuemntation](https://www.sbert.net/) and [github repo](https://github.com/UKPLab/sentence-transformers/tree/master/examples) are filled with great instructions and examples on how to train, embed, retreieve etc. This site was open all the time for the last few months. 
 
+Wattenberg, et al., ["How to Use t-SNE Effectively"](https://distill.pub/2016/misread-tsne/), Distill, 2016. http://doi.org/10.23915/distill.00002
+
 ## Interesting papers
 
 Mengzhao Wang, Xiaoliang Xu, Qiang Yue, and Yuxiang Wang. 2021. [A comprehensive survey and experimental comparison of graph-based approximate nearest neighbor search](https://arxiv.org/abs/2101.12631). Proc. VLDB Endow. 14, 11 (July 2021), 1964–1978. https://doi.org/10.14778/3476249.3476255 
